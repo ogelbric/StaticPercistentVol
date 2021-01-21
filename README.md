@@ -8,7 +8,7 @@ pacific-gold-storage-policy   csi.vsphere.vmware.com   Delete          Immediate
 [root@localhost ~]# 
 ```
 
-**Create the persitent volume YAML**
+**Create the persitent volume YAML and apply**
 ```
 apiVersion: v1
 kind: PersistentVolume
@@ -34,7 +34,7 @@ task-pv-volume   4Gi        RWO            Retain           Bound    default/tas
 [root@localhost ~]# 
 ```
 
-**Create the persistent volume claim YAML**
+**Create the persistent volume claim YAML and apply**
 ```
 apiVersion: v1
 kind: PersistentVolumeClaim
